@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="RenameExternalProjectImportWizard">
+		<item value="false" key="WizardRenameImportProjectPage.STORE_CLEAN_BUILD_OUTPUT"/>
+		<item value="false" key="WizardRenameImportProjectPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardRenameImportProjectPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+		<list key="WizardRenameImportProjectPage.STORE_DIRECTORIES">
+			<item value="C:\Users\alexl\Downloads\WeatherPanel_SKS7G2"/>
+		</list>
+	</section>
+</section>
