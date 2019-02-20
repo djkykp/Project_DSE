@@ -1,0 +1,14 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+arg1 = $(1)
+export PATH=C:\Renesas\Synergy\e2studio_v6.2.1_ssp_v1.5.0\toolchains\gcc_arm\4.9_2015q3\bin\;C:\Renesas\Synergy\e2studio_v6.2.1_ssp_v1.5.0\eclipse\..\Utilities;C:/Renesas/Synergy/e2studio_v6.2.1_ssp_v1.5.0/eclipse//features/com.renesas.jre.win32.win32.x86_1.8.0.65/jre/bin/client;C:/Renesas/Synergy/e2studio_v6.2.1_ssp_v1.5.0/eclipse//features/com.renesas.jre.win32.win32.x86_1.8.0.65/jre/bin;C:/Renesas/Synergy/e2studio_v6.2.1_ssp_v1.5.0/eclipse//features/com.renesas.jre.win32.win32.x86_1.8.0.65/jre/lib/i386;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\TDM-GCC-64\bin;C:\PROGRA~2\PICC;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Google\Chrome;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q3\bin;C:\Python37\Scripts\;C:\Python37\;C:\MinGW\bin;C:\RailsInstaller\Ruby2.2.0\bin;C:\Ruby22-x64\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.3.0\bin;C:\Users\alexl\AppData\Local\Microsoft\WindowsApps;C:\Users\alexl\AppData\Local\GitHubDesktop\bin;C:\xampp\php;C:\Users\alexl\AppData\Roaming\Composer\vendor\bin;C:\Renesas\Synergy\e2studio_v6.2.1_ssp_v1.5.0\eclipse
+export TCINSTALL=C:\Renesas\Synergy\e2studio_v6.2.1_ssp_v1.5.0\toolchains\gcc_arm\4.9_2015q3$(call arg1,\)
+export CWD=$(CURDIR)
+export AMS_LICENSE_PATH=C:\Renesas\Synergy\e2studio_v6.2.1_ssp_v1.5.0\internal\projectgen\arm\licenses\SSP_License_Example_EvalLicense_20180531.xml
+export SECURE_BUILD_COMMAND=C:\Renesas\Synergy\e2studio_v6.2.1_ssp_v1.5.0\eclipse\../Utilities/isdebuild
+export TC_VERSION=4.9.3.20150529
+export AMS_KEEP_FILE=false
+export PWD=$(CURDIR)
+export GCC_VERSION=4.9.3
