@@ -1,0 +1,25 @@
+12:59:40 **** Incremental Build of configuration Debug for project CIDEC_Main_Tachomalx_1_4 ****
+make -j4 all 
+'Building file: ../src/synergy_gen/hal_data.c'
+'Invoking: Cross ARM C Compiler'
+C:\Renesas\e2_studio\eclipse\../Utilities/isdebuild arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g3 -DSF_MESSAGE_CLASS -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy_cfg\ssp_cfg\framework" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\framework\api" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\framework\instances" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\framework\tes" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy_cfg\ssp_cfg\framework\el" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\framework\el" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\src\framework\el\tx" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy_cfg\ssp_cfg\bsp" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy_cfg\ssp_cfg\driver" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\bsp" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\bsp\cmsis\Include" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\driver\api" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\synergy\ssp\inc\driver\instances" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\src" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\src\synergy_gen" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\src\guix_gen\GNU" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\src\guix_gen\IAR" -I"C:\Users\alexl\e2_studio\S7_SK_gx_prompt_timer_1_1_0\CIDEC_Main_Tachomalx_1_4\src\guix" -std=c99 -MMD -MP -MF"src/synergy_gen/hal_data.d" -MT"src/synergy_gen/hal_data.o" -c -o "src/synergy_gen/hal_data.o" -x c "../src/synergy_gen/hal_data.c"
+'Finished building: ../src/synergy_gen/hal_data.c'
+' '
+'Building target: CIDEC_Main_Tachomalx_1_4.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc @"CIDEC_Main_Tachomalx_1_4.elf.in"
+'Finished building target: CIDEC_Main_Tachomalx_1_4.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-eabi-objcopy -O srec "CIDEC_Main_Tachomalx_1_4.elf"  "CIDEC_Main_Tachomalx_1_4.srec"
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "CIDEC_Main_Tachomalx_1_4.elf"
+   text	   data	    bss	    dec	    hex	filename
+1645664	   2636	 482692	2130992	 208430	CIDEC_Main_Tachomalx_1_4.elf
+'Finished building: CIDEC_Main_Tachomalx_1_4.siz'
+' '
+'Finished building: CIDEC_Main_Tachomalx_1_4.srec'
+' '
+
+12:59:45 Build Finished. 0 errors, 0 warnings. (took 4s.733ms)
+

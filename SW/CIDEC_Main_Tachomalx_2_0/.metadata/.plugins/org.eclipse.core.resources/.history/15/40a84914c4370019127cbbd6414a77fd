@@ -1,0 +1,75 @@
+#include "button_thread0.h"
+#include "gx_api.h"
+#include "system_api.h"
+#include "sf_message_payloads.h"
+#include "rpm_reader_api.h"
+#include <stdio.h>
+#include <math.h>
+#include "bsp_cfg.h"
+
+#include "gx_api.h"
+#include "pwm_thread0.h"
+
+#include "weather_GNU_resources.h"
+#include "weather_GNU_specifications.h"
+
+
+
+/***********************************************************************************************************************
+ * Exported global functions (to be accessed by other files)
+ **********************************************************************************************************************/
+extern const sf_message_post_cfg_t g_post_cfg;
+extern const sf_message_acquire_cfg_t g_acquire_cfg;
+//extern int rpm_test;
+float RPM=101.00;
+bool on=true;
+//static rpm_reader_payload_t*   p_rpm_message;
+
+
+/* New Thread entry function */
+void button_thread0_entry(void) {
+	/* TODO: add your own code here */
+	g_external_irq10.p_api->open(g_external_irq10.p_ctrl,g_external_irq10.p_cfg);
+	g_external_irq10.p_api->enable(g_external_irq10.p_ctrl);
+	while (1) {
+		tx_thread_sleep(1);
+	}
+}
+
+
+void button_callback_SW5(external_irq_callback_args_t * p_args)
+{
+
+	//UINT        status;
+	   // GX_PROMPT * p_prompt;
+	   // bool send_event = true;
+	        //GX_EVENT gxe;
+	//g_ioport.p_api->pinWrite(IOPORT_PORT_00_PIN_05, false);
+	           on=!on;
+
+	//float temp_in_C = 0;
+	    //ssp_err_t err;
+
+
+	    /** Send event. */
+	                sf_message_header_t * p_message  = NULL;
+	                //sf_message_payload_t * p_payload = NULL;
+
+	    /** Get buffer from messaging framework. */
+	                err = g_sf_message.p_api->bufferAcquire(g_sf_message.p_ctrl, (sf_message_header_t **) &p_message, &g_acquire_cfg, TX_NO_WAIT);
+
+
+	 /** Create message. */
+	            p_message->event_b.class_code = SF_MESSAGE_EVENT_CLASS_RPM_READER;
+	            p_message->event_b.code  =SF_MESSAGE_EVENT_READ_RPM_TEST;
+
+	            /** Post message. */
+	            sf_message_post_err_t post_err;
+	            err = g_sf_message.p_api->post(g_sf_message.p_ctrl, (sf_message_header_t *) p_message, &g_post_cfg, &post_err, TX_NO_WAIT);
+
+
+
+}
+
+
+
