@@ -1,6 +1,0 @@
-int rpm_current;
-int rpm_pwm_duty;
-int rpm_error;
-int target_rpm;
-double STEP;
-
